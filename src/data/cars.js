@@ -4,10 +4,10 @@ export const cars = [
     name: "Mercedes-Benz C300 2015",
     price: 11550000,
     brand: "Mercedes",
-    city: " city : Ibadan",
+    city: "Ibadan",
     location: "iyana church , class house",
     year: 2015,
-    mileage: 65000,
+    // mileage: 65000,
     image: "/cars/pilot_01.jpg",
   },
   {
@@ -29,7 +29,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2016,
-    mileage: 310039,
+    // mileage: 310039,
     image: "/cars/venza_03.jpg"
   },
   {
@@ -40,7 +40,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2012,
-    mileage: 194842,
+    // mileage: 194842,
     image: "/cars/camry_01.jpg"
   },
   {
@@ -130,7 +130,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2015,
-    mileage: 99000,
+    // mileage: 99000,
     image: "/cars/highlander.jpg"
   },
   {
@@ -141,7 +141,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2016,
-    mileage: 87000,
+    // mileage: 87000,
     image: "/cars/2012_Toyota_Corolla_1.jpg"
   },
   {
@@ -197,7 +197,7 @@ export const cars = [
     city: "ibadan",
     location: "iyana church , class house",
     year: 2014,
-    mileage: 142300,
+    // mileage: 142300,
     image: "/cars/2014_toyota_camry_06.JPG"
   },
   {
@@ -208,7 +208,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2011,
-    mileage: 210450,
+    // mileage: 210450,
     image: "/cars/coro_01.jpg"
   },
   {
@@ -275,7 +275,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2016,
-    mileage: 90000,
+    // mileage: 90000,
     image: "/cars/highlander.jpg"
   },
 
@@ -309,7 +309,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2018,
-    mileage: 65000,
+    // mileage: 65000,
     image: "/cars/venza_06.jpg"
   },
   {
@@ -331,7 +331,7 @@ export const cars = [
     city: "Ibadan",
     location: "iyana church , class house",
     year: 2015,
-    mileage: 88000,
+    // mileage: 88000,
     image: "/cars/venza_02.jpg"
   },
 ];

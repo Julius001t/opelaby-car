@@ -3,6 +3,9 @@ import useFavorites from "../hooks/useFavorites";
 const CarCard = ({ car }) => {
   const { toggleFavorite, isFavorite } = useFavorites();
 
+  // ✅ Prevent rendering if car is not ready
+  if (!car) return null;
+
   const phoneNumber = "2348073972855";
   const message = encodeURIComponent(
     `Hello, I'm interested in the ${car.name}. Please share more details.`
@@ -14,22 +17,25 @@ const CarCard = ({ car }) => {
       {/* Favorite */}
       <button
         onClick={() => toggleFavorite(car)}
-        className="absolute top-3 right-3 text-2xl"
+        className="absolute top-3 right-3 text-2xl z-10"
       >
         {isFavorite(car.id) ? "❤️" : "🤍"}
       </button>
 
-      <img
-        src={car.image}
-        alt={car.name}
-        className="h-48 w-full object-cover"
-      />
+      {/* Image (safe check) */}
+      {car.image && (
+        <img
+          src={car.image}
+          alt={car.name}
+          className="h-48 w-full object-cover"
+        />
+      )}
 
       <div className="p-4">
         <h3 className="font-bold text-lg">{car.name}</h3>
 
         <p className="text-red-600 font-semibold mt-1">
-          ₦ {car.price.toLocaleString()}
+          ₦ {Number(car.price).toLocaleString()}
         </p>
 
         <p className="text-sm text-gray-600 mt-1">
@@ -37,7 +43,7 @@ const CarCard = ({ car }) => {
         </p>
 
         <p className="text-xs text-gray-500 mt-2">
-          {car.year} • {car.mileage.toLocaleString()} km
+          {car.year} • {Number(car.mileage).toLocaleString()} km
         </p>
 
         {/* WhatsApp Button */}
